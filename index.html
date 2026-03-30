@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Personal Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="header">🚀 My Personal Portfolio 🚀</div>
+
+<div class="nav">
+<button onclick="show('home')">Home</button>
+<button onclick="show('about')">About</button>
+<button onclick="show('skills')">Skills</button>
+<button onclick="show('projects')">Projects</button>
+<button onclick="show('work')">My Work</button>
+<button onclick="show('contact')">Contact</button>
+</div>
+
+<div id="home" class="section active">
+<h1>Hi, I'm Aashi 👩‍💻</h1>
+
+<div class="typing">Web Developer & Designer</div>
+
+<p>Welcome to my personal portfolio website.</p>
+<p>I am passionate about creating modern, responsive and user-friendly websites.</p>
+<p>I love learning new technologies and improving my skills every day.</p>
+
+<div class="card">
+<h3>✨ Creative Design</h3>
+<p>I design attractive and easy-to-use website layouts.</p>
+</div>
+
+<div class="card">
+<h3>💻 Web Development</h3>
+<p>I develop websites using HTML, CSS and JavaScript.</p>
+</div>
+
+<img src="images/profile1.png">
+<img src="images/profile2.png">
+
+<br>
+<button class="btn" onclick="show('work')">Explore My Work</button>
+</div>
+
+<div id="about" class="section">
+<h1>About Me</h1>
+
+<p>I am a student of web development.</p>
+<p>I have a strong interest in designing and developing websites.</p>
+<p>I enjoy creating modern, creative and user-friendly websites.</p>
+
+<p>I am currently learning HTML, CSS and JavaScript to improve my skills.</p>
+<p>My goal is to become a professional web developer in the future.</p>
+
+<div class="card">
+<h3>🎯 My Goal</h3>
+<p>To build responsive and modern websites that provide a great user experience.</p>
+</div>
+
+</div>
+<div id="skills" class="section">
+<h1>My Skills</h1>
+
+<div class="card">
+<img src="images/profile3.png">
+<h3>My Skills</h3>
+<p>I have knowledge of HTML, CSS and JavaScript.</p>
+<p>I can create responsive layouts and attractive designs.</p>
+</div>
+
+</div>
+
+<div id="projects" class="section">
+<h1>My Projects</h1>
+
+<div class="card">
+<img src="images/profile4.png">
+<h3>My Projects</h3>
+<p>I have created a calculator and portfolio website.</p>
+<p>These projects helped me improve my coding skills.</p>
+</div>
+
+</div>
+
+<div id="work" class="section">
+<h1>My Work</h1>
+
+<div class="card">
+<img src="images/profile5.png">
+<h3>My Work</h3>
+<p>I design clean, modern and creative websites.</p>
+<p>I focus on user-friendly layouts and good design.</p>
+</div>
+
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="section">
+<h1>Contact Me 📩</h1>
+
+<div class="card">
+<h3>Get in Touch</h3>
+<p>If you have any questions, feel free to contact me.</p>
+
+<input type="text" placeholder="Enter Your Name"><br>
+<input type="email" placeholder="Enter Your Email"><br>
+<textarea placeholder="Write Your Message"></textarea><br>
+
+<button class="btn" onclick="sendMsg(this)">Send Message</button>
+</div>
+</div>
+
+<div class="footer">
+<h2>My Web Project</h2>
+<p>Name: Ayesha Naeem</p>
+<p>Roll No: 136</p>
+<p>Email: aashikhan@gmail.com</p>
+<p>Project: My Personal Portfolio</p>
+<p>Course: Web Technology</p>
+
+</div>
+
+<script>
+function show(id){
+document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+}
+
+function sendMsg(btn){
+btn.innerHTML="✔ Message Sent!";
+btn.style.background="green";
+}
+</script>
+
+</body>
+</html>
